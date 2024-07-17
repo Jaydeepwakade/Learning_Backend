@@ -1,0 +1,22 @@
+GET 200 279 - 8.054 ms Wed, 17 Jul 2024 19:23:00 GMT 1.1 /
+
+GET 200 279 - 0.773 ms Wed, 17 Jul 2024 19:23:14 GMT 1.1 /
+
+GET 200 279 - 7.776 ms Wed, 17 Jul 2024 19:23:24 GMT 1.1 /
+
+GET 200 279 - 0.673 ms Wed, 17 Jul 2024 19:24:02 GMT 1.1 /
+
+GET 200 279 - 1.036 ms Wed, 17 Jul 2024 19:24:05 GMT 1.1 /
+
+PUT 404 148 - 0.801 ms Wed, 17 Jul 2024 19:24:47 GMT 1.1 /get-users
+
+PUT 404 148 - 0.488 ms Wed, 17 Jul 2024 19:25:09 GMT 1.1 /get-users
+
+GET 201 187 - 0.710 ms Wed, 17 Jul 2024 19:25:16 GMT 1.1 /get-users
+
+GET 201 187 - 8.142 ms Wed, 17 Jul 2024 19:40:42 GMT 1.1 /get-users
+
+PUT 201 17 - 15.370 ms Wed, 17 Jul 2024 19:41:48 GMT 1.1 /users/5
+
+GET 200 275 - 7.713 ms Wed, 17 Jul 2024 19:42:16 GMT 1.1 /
+

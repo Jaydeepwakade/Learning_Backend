@@ -1,0 +1,12 @@
+{
+  "name": "day_03_middlewares",
+  "version": "1.0.0",
+  "main": "Morganlogger.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon Morganlogger.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
