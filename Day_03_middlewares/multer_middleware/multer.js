@@ -15,10 +15,10 @@ cloudinary.config({
 
 const server = express()
 const port = 3000
- const uploaddir=path.join(__dirname,"uploads")
- if(!fs.existsSync(uploaddir)){
+const uploaddir = path.join(__dirname, "uploads")
+if (!fs.existsSync(uploaddir)) {
     fs.mkdirSync(uploaddir)
- }
+}
 server.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "index.html"))
 })
@@ -37,12 +37,12 @@ const upload = multer({ storage })
 server.post("/upload", upload.single("file"), (req, res) => {
     if (!req.file) {
         console.log("no file uploded")
-       return res.status(400).json({ message: "No files uploaded" })
+        return res.status(400).json({ message: "No files uploaded" })
     }
-    console.log("file uploaded",req.file)
+    console.log("file uploaded", req.file)
     cloudinary.uploader.upload(req.file.path, (error, result) => {
         if (error) {
-          return  res.status(500).json({ message: "upload failed", error })
+            return res.status(500).json({ message: "upload failed", error })
         }
 
         res.status(200).json({
